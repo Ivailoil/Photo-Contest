@@ -11,9 +11,7 @@ public class Review {
 
     private Integer id;
 
-    private Photo photo;
-
-    private User user;
+    private User juror;
 
     private String description;
 

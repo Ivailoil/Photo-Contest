@@ -7,12 +7,15 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 import java.util.Set;
+
 @Getter
 @Setter
 @NoArgsConstructor
 public class Contest {
 
     private Integer id;
+
+    private String title;
 
     private User createdBy;
 
@@ -32,9 +35,13 @@ public class Contest {
 
     private boolean isInvitational;
 
+    private boolean isDeleted;
+
     private Set<User> jury;
+
+    private Set<User> invitedUsers;
 
     private Set<User> winners;
 
     private Set<Photo> photos;
- }
+}
